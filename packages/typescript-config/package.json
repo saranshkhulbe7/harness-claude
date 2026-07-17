@@ -1,0 +1,15 @@
+{
+  "name": "@harness-claude/typescript-config",
+  "private": true,
+  "type": "module",
+  "files": [
+    "*.json"
+  ],
+  "exports": {
+    "./base.json": "./base.json",
+    "./bun.json": "./bun.json",
+    "./bun-react.json": "./bun-react.json",
+    "./react-vite.json": "./react-vite.json",
+    "./library.json": "./library.json"
+  }
+}

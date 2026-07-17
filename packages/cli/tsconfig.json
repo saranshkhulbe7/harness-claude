@@ -1,0 +1,7 @@
+{
+  "extends": "@harness-claude/typescript-config/bun-react.json",
+  "compilerOptions": {
+    "jsxImportSource": "@opentui/react"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
+}
