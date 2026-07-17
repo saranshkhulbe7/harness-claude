@@ -77,10 +77,13 @@ export function InputBar({ onSubmit, disabled }: Props) {
     handleContentChange(textarea.plainText);
   }, []);
 
-  const handleCommandExecute = useCallback((index: number) => {
-    const command = resolveCommand(index);
-    handleCommand(command);
-  }, []);
+  const handleCommandExecute = useCallback(
+    (index: number) => {
+      const command = resolveCommand(index);
+      handleCommand(command);
+    },
+    [resolveCommand, handleCommand],
+  );
 
   useEffect(() => {
     const textarea = textareaRef.current;
